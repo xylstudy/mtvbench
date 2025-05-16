@@ -45,7 +45,7 @@ PROMPT_PATH = "/path/to/prompts.txt"                      # Path to your prompt 
 VIDEO_DIR = "/path/to/videos"                             # Directory containing the generated videos
 OUTPUT_JSON = "/path/to/output/change-alignment_check.json"  # Output file for saving the mapping or score
 
-
+---
 
 ### ✅ Step 3: Run the Script
 
