@@ -34,7 +34,7 @@ PROMPT_PATH = "/path/to/prompts.txt"                         # Path to your prom
 VIDEO_DIR = "/path/to/videos"                                # Directory containing the generated videos
 OUTPUT_JSON = "/path/to/output/change-alignment_check.json"  # Output file for saving the mapping or score
 BASE_MODEL_PATH  = "/path/to/model"                          # Path to Qwen-VL or CLIP model checkpoint
-
+PROMPT_META_PATH    = "/path/to/prompts_meta.json"       # Metadata JSON file with action1/action2 per group
 ```
 
 ---
