@@ -1,3 +1,20 @@
+# 🎬 MTVBench: Benchmarking Video Generation Models with Multiple Transition Text Prompts
+
+**MTVBench** is a large-scale benchmark designed for evaluating multi-prompt video generation models. Unlike traditional single-prompt evaluations, MTVBench targets a more realistic scenario where models must generate coherent videos that **transition between multiple textual descriptions**.
+
+We provide:
+- A curated set of **1,110 prompt groups**, each containing 2–4 sequential prompts
+- Generated videos for each group, [available on Hugging Face]( https://huggingface.co/datasets/vinthony/MTVBench) (e.g., `V_001.mp4`, `V_002.mp4`, ...)
+- Evaluation tools for **semantic alignment**, **attribute (action) alignment**, and **motion smoothness**
+- Prompt metadata and alignment annotations
+
+This repository includes instructions for running evaluation scripts and understanding the prompt-to-video structure.
+
+> 📂 All prompt text files, metadata, and generated videos must follow the specified naming and formatting rules to ensure correct evaluation.
+
+---
+
+
 ## 🛠 How to Use the Prompt-to-Video Mapping Code
 
 ### ✅ Step 1: Confirm Prompt Text Format
