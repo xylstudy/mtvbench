@@ -15,7 +15,7 @@ The prompt benchmark we collected is shown in `mtv_bench_prompt.txt`.
 
 ### ✅ Step 1: Confirm Prompt Text Format
 
-Ensure your prompt file (e.g., `mtv_bench_prompt.txt`) follows this structure:
+Ensure your prompt file (e.g., `prompts.txt`) follows this structure:
 
 - Each group contains **2–4 prompts**, each on its own line  
 - Each group is separated by a line with `###`  
@@ -29,19 +29,22 @@ Example:
     A cat climbs a tree in the yard, medium shot with sunlight filtering through the leaves.
     A cat lays on the windowsill, medium shot with sunlight filtering through the leaves.
     ###
-    A horse gallops across the field, wide shot with a mountain in the background.
-    A horse rests under a tree, wide shot with a mountain in the background.
+    ...
 
-> This format ensures correct parsing when generating the prompt-to-video JSON mapping.
+> ⚠️ **Note:** The order of prompt groups determines the expected video index (e.g., `V_000.mp4`, `V_001.mp4`, ...).  
+> Ensure that the **order of videos matches the order of prompt groups** exactly.
+
+---
 
 ### ✅ Step 2: Correctly Set Path Variables
 
-Before running the evaluation code (e.g., `semanticalignment_overallalignment.py` )make sure the following paths are correctly set:
+Before running the script (e.g., `generate_prompt_mapping.py`), make sure the following paths are set correctly:
 
 ```python
 PROMPT_PATH = "/path/to/prompts.txt"                      # Path to your prompt text file
 VIDEO_DIR = "/path/to/videos"                             # Directory containing the generated videos
-OUTPUT_JSON = "/path/to/output/change-alignment_check.json"  # Output file for saving the score
+OUTPUT_JSON = "/path/to/output/change-alignment_check.json"  # Output file for saving the mapping or score
+
 
 
 ### ✅ Step 3: Run the Script
