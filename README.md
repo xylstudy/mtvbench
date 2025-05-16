@@ -20,7 +20,7 @@ A cat lays on the windowsill, medium shot with sunlight filtering through the le
 ...
 ```
 
-> ⚠️ **Note:** The order of prompt groups determines the expected video index (e.g., `V_000.mp4`, `V_001.mp4`, ...).  
+> ⚠️ **Note:** The order of prompt groups determines the expected video index (e.g., `V_1.mp4`, `V_2.mp4`, ...).  
 > Ensure that the **order of videos matches the order of prompt groups** exactly.
 
 ---
