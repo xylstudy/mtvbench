@@ -1,16 +1,3 @@
-**MTVBench: Benchmarking Video Generation Models with Multiple Transition Text Prompts**
-
-Submission to NeurIPS 2025 Dataset and Benchmark track.
-
-Xiaodong Cun, Xiuli Bi, Ruihuan Yang, Jianfei Yuan, Bin Xiao, Bo Liu.
-
-GVC Lab, Great Bay University, and Chongqing University of Posts and Telecommunications
-
-We list all the generated videos here in each folder.
-
-The prompt benchmark we collected is shown in `mtv_bench_prompt.txt`.
-
-
 ## 🛠 How to Use the Prompt-to-Video Mapping Code
 
 ### ✅ Step 1: Confirm Prompt Text Format
@@ -23,13 +10,15 @@ Ensure your prompt file (e.g., `prompts.txt`) follows this structure:
 
 Example:
 
-    A dog chases a ball in the park, wide shot with green grass surrounding.
-    A dog sits patiently in the park, wide shot with green grass surrounding.
-    ###
-    A cat climbs a tree in the yard, medium shot with sunlight filtering through the leaves.
-    A cat lays on the windowsill, medium shot with sunlight filtering through the leaves.
-    ###
-    ...
+```
+A dog chases a ball in the park, wide shot with green grass surrounding.
+A dog sits patiently in the park, wide shot with green grass surrounding.
+###
+A cat climbs a tree in the yard, medium shot with sunlight filtering through the leaves.
+A cat lays on the windowsill, medium shot with sunlight filtering through the leaves.
+###
+...
+```
 
 > ⚠️ **Note:** The order of prompt groups determines the expected video index (e.g., `V_000.mp4`, `V_001.mp4`, ...).  
 > Ensure that the **order of videos matches the order of prompt groups** exactly.
@@ -44,9 +33,9 @@ Before running the script (e.g., `generate_prompt_mapping.py`), make sure the fo
 PROMPT_PATH = "/path/to/prompts.txt"                      # Path to your prompt text file
 VIDEO_DIR = "/path/to/videos"                             # Directory containing the generated videos
 OUTPUT_JSON = "/path/to/output/change-alignment_check.json"  # Output file for saving the mapping or score
+```
 
 ---
-
 
 ### ✅ Step 3: Run the Script
 
@@ -54,4 +43,4 @@ After confirming the format and setting all paths correctly, run the script to g
 
 ```bash
 python generate_prompt_mapping.py
-
+```
