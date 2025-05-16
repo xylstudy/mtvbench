@@ -34,3 +34,11 @@ Example:
 
 > This format ensures correct parsing when generating the prompt-to-video JSON mapping.
 
+### ✅ Step 2: Correctly Set Path Variables
+
+Before running the script (e.g., `generate_prompt_mapping.py` or evaluation code), make sure the following paths are correctly set:
+
+```python
+PROMPT_PATH = "/path/to/prompts.txt"                      # Path to your prompt text file
+VIDEO_DIR = "/path/to/videos"                             # Directory containing the generated videos
+OUTPUT_JSON = "/path/to/output/change-alignment_check.json"  # Output file for saving the mapping or score
