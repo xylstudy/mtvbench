@@ -36,7 +36,7 @@ Example:
 
 ### ✅ Step 2: Correctly Set Path Variables
 
-Before running the script (e.g., `generate_prompt_mapping.py` or evaluation code), make sure the following paths are correctly set:
+Before running the evaluation code (e.g., `semanticalignment_overallalignment.py` )make sure the following paths are correctly set:
 
 ```python
 PROMPT_PATH = "/path/to/prompts.txt"                      # Path to your prompt text file
