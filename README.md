@@ -15,20 +15,22 @@ The prompt benchmark we collected is shown in `mtv_bench_prompt.txt`.
 
 ### ✅ Step 1: Confirm Prompt Text Format
 
-Ensure your prompt file (e.g., `mtv_bench_prompt.txt`) follows the correct structure:
+Ensure your prompt file (e.g., `mtv_bench_prompt.txt`) follows this structure:
 
-- Each group of **2–4 prompts** is separated by `###`
-- Each prompt is a **single line**
-- **No empty lines** between prompts
+- Each group contains **2–4 prompts**, each on its own line  
+- Each group is separated by a line with `###`  
+- No blank lines between prompts or groups
 
 Example:
 
-A dog chases a ball in the park, wide shot with green grass surrounding.
-A dog sits patiently in the park, wide shot with green grass surrounding.
-###
-A cat climbs a tree in the yard, medium shot with sunlight filtering through the leaves.
-A cat lays on the windowsill, medium shot with sunlight filtering through the leaves.
+    A dog chases a ball in the park, wide shot with green grass surrounding.
+    A dog sits patiently in the park, wide shot with green grass surrounding.
+    ###
+    A cat climbs a tree in the yard, medium shot with sunlight filtering through the leaves.
+    A cat lays on the windowsill, medium shot with sunlight filtering through the leaves.
+    ###
+    A horse gallops across the field, wide shot with a mountain in the background.
+    A horse rests under a tree, wide shot with a mountain in the background.
 
-
-> This format is required for downstream mapping and evaluation tools to parse the prompts correctly.
+> This format ensures correct parsing when generating the prompt-to-video JSON mapping.
 
