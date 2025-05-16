@@ -44,3 +44,33 @@ After confirming the format and setting all paths correctly, run the script to g
 ```bash
 python generate_prompt_mapping.py
 ```
+---
+
+### 🧾 Prompt Metadata Format (`prompts_meta.json`)
+
+This file provides **structured information about action transitions** for each prompt group. It is required for evaluating **attribute-level alignment** (e.g., action consistency).
+
+#### 📘 JSON Structure
+
+Each key corresponds to a prompt group index (starting from 1), and maps to the actions associated with that group:
+
+```json
+{
+    "1": {
+        "action1": "chases",
+        "action2": "sits patiently"
+    },
+    "2": {
+        "action1": "climbs",
+        "action2": "lays"
+    }
+}
+```
+
+#### 📌 Notes
+
+- The keys `"action1"` and `"action2"` refer to the **first** and **last** actions in the multi-prompt sequence, respectively.
+- Only two actions are currently supported; for longer sequences, the script may need to be extended accordingly.
+- This file must be consistent with the order and grouping defined in `prompts.txt`.
+
+---
