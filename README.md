@@ -41,4 +41,12 @@ Before running the evaluation code (e.g., `semanticalignment_overallalignment.py
 ```python
 PROMPT_PATH = "/path/to/prompts.txt"                      # Path to your prompt text file
 VIDEO_DIR = "/path/to/videos"                             # Directory containing the generated videos
-OUTPUT_JSON = "/path/to/output/change-alignment_check.json"  # Output file for saving the mapping or score
+OUTPUT_JSON = "/path/to/output/change-alignment_check.json"  # Output file for saving the score
+
+
+### ✅ Step 3: Run the Script
+
+Once the paths are correctly set, simply run the script from the command line:
+
+```bash
+python your_script_name.py
